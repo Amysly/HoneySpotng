@@ -1,12 +1,52 @@
-# React + Vite
+HoneySpot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HoneySpot is a responsive and SEO-optimized honey business website built with React, Tailwind CSS, and EmailJS.
 
-Currently, two official plugins are available:
+The platform allows customers to explore products and place orders directly via WhatsApp integration, making it a simple and practical MVP solution for small businesses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+Fully responsive design (mobile-first)
+SEO-optimized meta tags
+WhatsApp order integration
+EmailJS contact form integration
+Clean and modern UI with Tailwind CSS
+Fast build setup using Vite
 
-## Expanding the ESLint configuration
+Tech Stack
+React
+Tailwind CSS
+EmailJS
+Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+How Ordering Works
+Instead of using a traditional cart and backend checkout system:
+Users browse available honey products.
+When they click "Order", they are redirected to WhatsApp.
+A pre-filled message allows them to chat directly with the business owner.
+This makes ordering simple and practical for local businesses that primarily operate through WhatsApp.
+
+Why I Built It This Way
+As I am currently studying backend development, I intentionally built HoneySpot as a frontend-focused MVP (Minimum Viable Product).
+Many small businesses in Nigeria operate primarily through WhatsApp rather than complex e-commerce systems. Instead of delaying the project to build a full backend:
+I implemented WhatsApp integration for real-world usability.
+I focused on responsive UI and SEO optimization.
+I ensured customers could still place orders easily.
+I integrated EmailJS to handle inquiries without server-side code.
+This approach allowed me to:
+Deliver a practical business solution
+Demonstrate frontend architecture skills
+Apply SEO best practices
+Build something production-ready without over-engineering
+The next phase of this project would include:
+Backend integration
+Cart functionality
+Database for product management
+Payment gateway integration
+
+What This Project Demonstrates
+Frontend architecture using React
+Component-based structure
+Third-party API integration (EmailJS)
+Business-focused problem solving
+SEO implementation for local businesses
+Real-world MVP thinking
