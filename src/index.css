@@ -4,7 +4,7 @@
 
 
 .bg-honeycomb{
-    background-image: url('images/honeybg.jpg');
+    background-image: url('/images/honeybg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
