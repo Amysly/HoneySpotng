@@ -6,7 +6,6 @@ const NotFoundPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center px-6">
       <div className="text-center">
-        {/* Icon and Error Code */}
         <div className="flex justify-center mb-4">
           <FaExclamationTriangle size={64} className="text-red-500 animate-bounce" />
         </div>
@@ -19,7 +18,6 @@ const NotFoundPage = () => {
           Page Not Found
         </div>
 
-        {/* Messaging */}
         <h2 className="mt-8 text-3xl font-bold text-gray-800 md:text-4xl">
           Oops! You've wandered off the map.
         </h2>
