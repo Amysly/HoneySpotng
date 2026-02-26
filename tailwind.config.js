@@ -2,7 +2,8 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/**/*.{js,jsx,ts,tsx}" // ensures nested folders are scanned
   ],
   theme: {
     extend: {
@@ -10,8 +11,7 @@ export default {
         'custom-background': '#fffaf0',
         'custom-text': '#4a2c0a',
         'custom-button': '#ffc107',
-
-      }
+      },
     },
   },
   plugins: [],
