@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
 const NavBar = () => {
@@ -38,8 +39,9 @@ const NavBar = () => {
         
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-2 outline-none">
-          <div className="w-9 h-9 bg-yellow-500 rounded-full flex items-center justify-center font-black text-white shadow-sm">
-            H
+          <div className="w-9 h-9  rounded-full flex items-center justify-center  shadow-sm">
+            <img src='images/honeyspotlogo.jpeg'> 
+            </img>
           </div>
           <span className={`text-2xl font-black tracking-tighter ${scrolled ? 'text-green-800' : 'text-green-700'}`}>
             Honey<span className="text-yellow-600">Spot</span>
@@ -57,10 +59,10 @@ const NavBar = () => {
               {link.name}
             </NavLink>
           ))}
-          <button className="bg-green-700 text-white px-7 py-2.5 rounded-full font-bold
+          <Link to='/products' className="bg-green-700 text-white px-7 py-2.5 rounded-full font-bold
            hover:bg-green-600 transition-all transform hover:scale-105 shadow-md">
             Order Now
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}

@@ -16,9 +16,10 @@ const Footer = () => {
         
         {/* Brand Info */}
         <div className="space-y-4">
-          <h2 className="text-3xl font-black text-white tracking-tight">
-            Honey<span className="text-yellow-500">Spot</span>
-          </h2>
+          <div className='flex justify-items-center'>
+          <img src='images/honeyspotlogo.jpeg' className='w-20 h-20'> 
+            </img>
+          </div>
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
             Pure, natural, and locally-sourced honey crafted to sweeten your life. 
             From our hives to your home, we bring you the gold standard of nature.
