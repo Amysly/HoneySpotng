@@ -1,7 +1,12 @@
 import React from 'react';
 import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+  const navigate = useNavigate()
+  const handleNavigate =()=>{
+    navigate('/products')
+  }
   return (
     <section className="relative overflow-hidden bg-honeycomb py-16 lg:py-24">
       <div className="container mx-auto px-6 relative z-10">
@@ -16,7 +21,11 @@ const HeroSection = () => {
               Straight from the hive to your table. Experience the golden standard of sweetness.
             </p>
             <div className="pt-4">
-              <Button/>
+              <Button
+              onClick={handleNavigate}
+              >
+                Explore Our Honey
+              </Button>
             </div>
           </div>
 

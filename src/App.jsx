@@ -6,7 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-// Pages & Components
+
 import About from './pages/About';
 import Product from './pages/Product';
 import Faq from './pages/Faq';
@@ -21,7 +21,7 @@ const App = () => {
   const router = createBrowserRouter(
      createRoutesFromElements(
     <>
-    {/* ROUTE WITHOUT HEADER & FOOTER */}
+
      <Route path="*" element={<NotFoundPage />} />
       <Route element={<Mainlayout />}>
         <Route path= "/"element={<Homepage />} />

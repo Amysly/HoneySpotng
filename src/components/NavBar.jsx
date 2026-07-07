@@ -2,8 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
+  const navigate = useNavigate()
+  const handleNavigate =()=>{
+    navigate('/products')
+  }
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -23,7 +29,7 @@ const NavBar = () => {
     { name: 'Contact Us', path: '/contact-us' },
   ];
 
-  // active link styling
+
   const linkStyles = ({ isActive }) => 
     `font-bold transition-colors duration-300 ${
       isActive 
@@ -37,18 +43,25 @@ const NavBar = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        {/* Logo */}
-        <NavLink to="/" className="flex items-center gap-2 outline-none">
-          <div className="w-9 h-9  rounded-full flex items-center justify-center  shadow-sm">
-            <img src='images/honeyspotlogo.jpeg'> 
-            </img>
-          </div>
-          <span className={`text-2xl font-black tracking-tighter ${scrolled ? 'text-green-800' : 'text-green-700'}`}>
-            Honey<span className="text-yellow-600">Spot</span>
-          </span>
-        </NavLink>
+        <NavLink
+  to="/"
+  className="flex items-center gap-1 outline-none"
+>
+  <img
+    src="images/honeyspotlogo.jpeg"
+    alt="HoneySpot Logo"
+    className="w-9 h-9 rounded-full object-cover shadow-sm"
+  />
 
-        {/* Desktop Menu */}
+  <span
+    className={`text-2xl font-black tracking-tight ${
+      scrolled ? "text-green-800" : "text-green-700"
+    }`}
+  >
+    Honey<span className="text-yellow-600">Spot</span>
+  </span>
+</NavLink>
+
         <div className="hidden md:flex items-center space-x-10">
           {navLinks.map((link) => (
             <NavLink
@@ -59,13 +72,13 @@ const NavBar = () => {
               {link.name}
             </NavLink>
           ))}
-          <Link to='/products' className="bg-green-700 text-white px-7 py-2.5 rounded-full font-bold
-           hover:bg-green-600 transition-all transform hover:scale-105 shadow-md">
-            Order Now
-          </Link>
+         <Button
+         onClick={handleNavigate}
+         >
+          Order Now
+         </Button>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <button 
             onClick={() => setIsOpen(!isOpen)}
@@ -76,7 +89,6 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-white/95 backdrop-blur-md z-40 transform transition-transform duration-500 ease-in-out md:hidden ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>

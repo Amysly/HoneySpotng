@@ -12,7 +12,6 @@ const Product = () => {
   return (
     <section className="bg-white py-16 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-amber-600 font-bold tracking-widest uppercase text-sm mb-2">Nature's Best</h2>
           <h1 className="text-3xl md:text-4xl sm:text-3xl font-black text-green-800">
@@ -21,10 +20,8 @@ const Product = () => {
           <div className="w-24 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {products.map((product) => {
-            // Create the dynamic message for each product
             const message = `Hello HoneySpot! I want to order "${product.name}" which costs ${product.price}. Is it available?`;
             const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
@@ -33,7 +30,6 @@ const Product = () => {
                 key={product.id} 
                 className="group bg-amber-50 rounded-2xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-amber-200 text-center"
               >
-                {/* Image Container */}
                 <div className="relative overflow-hidden rounded-xl bg-white mb-6 aspect-square flex items-center justify-center">
                   <img
                     src={product.img}
@@ -42,7 +38,6 @@ const Product = () => {
                   />
                 </div>
 
-                {/* Text & Price */}
                 <h2 className="text-xl text-green-900 font-bold mb-1">
                   {product.name}
                 </h2>
@@ -50,7 +45,7 @@ const Product = () => {
                   {product.price}
                 </p>
 
-                {/* Dynamic WhatsApp Link */}
+              
                 <a 
                   href={whatsappLink}
                   target="_blank"
