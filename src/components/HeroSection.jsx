@@ -29,7 +29,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Image Composition */}
           <div className="relative h-[400px] md:h-[500px] flex justify-center items-center">
             {/* Main Center Image */}
             <div className="relative z-20 w-48 h-48 md:w-64 md:h-64 rounded-full border-8 border-white
