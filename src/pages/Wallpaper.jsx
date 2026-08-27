@@ -40,12 +40,11 @@ const Wallpaper = () => {
   return (
     <section className="py-12 bg-yellow-500">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-black text-center text-green-700 mb-12 
+        <h2 className="text-3xl md:text-4xl font-black font-roboto text-center text-green-700 mb-12 
        ">
           Why Choose HoneySpot?
         </h2>
 
-        {/* Responsive Grid: 1 col (mobile), 2 cols (tablet), 3 cols (desktop) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {reasons.map((reason, index) => (
             <div 
@@ -57,11 +56,11 @@ const Wallpaper = () => {
                   <div className="p-3 rounded-full bg-yellow-100 group-hover:bg-green-100 transition-colors duration-300">
                     {reason.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-green-700 leading-tight">
+                  <h3 className="text-xl font-bold font-roboto text-green-700 leading-tight">
                     {reason.title}
                   </h3>
                 </div>
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed font-sans font-medium">
                   {reason.desc}
                 </p>
               </div>

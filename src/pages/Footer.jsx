@@ -14,21 +14,19 @@ const Footer = () => {
     <footer className="bg-neutral-900 text-yellow-400 py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
         
-        {/* Brand Info */}
         <div className="space-y-4">
           <div className='flex justify-items-center'>
-          <img src='images/honeyspotlogo.jpeg' className='w-20 h-20'> 
+          <img src="images/honeyspotlogo.png" className='w-20 h-20'> 
             </img>
           </div>
-          <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+          <p className="text-gray-400 text-sm leading-relaxed max-w-xs font-sans font font-medium">
             Pure, natural, and locally-sourced honey crafted to sweeten your life. 
             From our hives to your home, we bring you the gold standard of nature.
           </p>
         </div>
 
-       {/* Quick Links */}
       <div>
-        <h3 className="text-lg font-bold text-white mb-6 uppercase tracking-wider">Quick Links</h3>
+        <h3 className="text-lg font-bold font-roboto text-white mb-6 uppercase tracking-wider">Quick Links</h3>
         <ul className="space-y-3 text-sm">
           {navLinks.map((link) => (
             <li key={link.name}>
@@ -43,9 +41,8 @@ const Footer = () => {
         </ul>
       </div>
 
-        {/* Contact & Socials */}
         <div className="space-y-6">
-          <h3 className="text-lg font-bold text-white uppercase tracking-wider">Get in Touch</h3>
+          <h3 className="text-lg font-bold font-roboto text-white uppercase tracking-wider">Get in Touch</h3>
           <div className="space-y-4">
             <div className="flex items-center space-x-3 group">
               <FaEnvelope className="text-yellow-500 group-hover:scale-110 transition-transform" />
@@ -73,7 +70,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Copyright */}
+
       <div className="mt-16 border-t border-neutral-800 pt-8 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} HoneySpot. All rights reserved.</p>

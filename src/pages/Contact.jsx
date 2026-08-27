@@ -49,10 +49,9 @@ const Contact = () => {
     <section id="contact" className="min-h-screen bg-white py-20 px-6 lg:px-20 scroll-mt-16">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-black text-green-800 mb-4">Get In Touch</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+          <h2 className="text-3xl md:text-4xl font-black font-roboto text-green-800 mb-4">Get In Touch</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto font-medium font-sans text-lg">
             Have questions about our hives, wholesale orders, or just want to say hi? 
             We'd love to hear from you!
           </p>
@@ -60,31 +59,30 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
-          {/* Left Side: Contact Details */}
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-yellow-50 p-6 rounded-2xl border border-yellow-100 shadow-sm">
                 <FaPhoneAlt className="text-green-700 text-2xl mb-4" />
-                <h3 className="font-bold text-gray-800 text-lg">Call Us</h3>
-                <p className="text-gray-600 text-sm">08110977549</p>
+                <h3 className="font-bold font-roboto text-gray-800 text-lg">Call Us</h3>
+                <p className="text-gray-600 text-sm font-medium font-sans">08110977549</p>
               </div>
               
               <div className="bg-yellow-50 p-6 rounded-2xl border border-yellow-100 shadow-sm">
                 <FaEnvelope className="text-green-700 text-2xl mb-4" />
-                <h3 className="font-bold text-gray-800 text-lg">Email Us</h3>
-                <p className="text-gray-600 text-sm">Honeyspotng@gmail.com</p>
+                <h3 className="font-bold text-gray-800 font-roboto text-lg">Email Us</h3>
+                <p className="text-gray-600 text-sm font-medium font-sans">Honeyspotng@gmail.com</p>
               </div>
 
               <div className="bg-yellow-50 p-6 rounded-2xl border border-yellow-100 shadow-sm">
                 <FaMapMarkerAlt className="text-green-700 text-2xl mb-4" />
-                <h3 className="font-bold text-gray-800 text-lg">Visit Hive</h3>
-                <p className="text-gray-600 text-sm">Near Grandspot hotel Gwagwalada</p>
+                <h3 className="font-bold font-roboto text-gray-800 text-lg">Visit Hive</h3>
+                <p className="text-gray-600 text-sm font-medium font-sans">Near Grandspot hotel Gwagwalada</p>
               </div>
 
               <div className="bg-yellow-50 p-6 rounded-2xl border border-yellow-100 shadow-sm">
                 <FaClock className="text-green-700 text-2xl mb-4" />
-                <h3 className="font-bold text-gray-800 text-lg">Working Hours</h3>
-                <p className="text-gray-600 text-sm">Mon - Sat: 9am - 6pm</p>
+                <h3 className="font-bold font-roboto text-gray-800 text-lg">Working Hours</h3>
+                <p className="text-gray-600 text-sm font-medium font-sans">Mon - Sat: 9am - 6pm</p>
               </div>
             </div>
 
@@ -100,13 +98,12 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Side: Contact Form */}
           <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-50">
             <form ref={form} onSubmit={handleSendEmail}>
               <div className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                    <label className="block text-sm font-bold font-roboto text-gray-700 mb-2">Full Name</label>
                     <input 
                       type="text" 
                       name="user_name"
@@ -116,7 +113,7 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                    <label className="block text-sm font-bold font-roboto text-gray-700 mb-2">Email Address</label>
                     <input 
                       type="email" 
                       name="user_email"
@@ -127,7 +124,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-2">Your Message</label>
+                  <label className="block text-sm font-bold font-roboto text-gray-700 mb-2">Your Message</label>
                   <textarea 
                     rows="5" 
                     name="message"
@@ -140,7 +137,7 @@ const Contact = () => {
                 <button 
                   type="submit"
                   disabled={sending}
-                  className={`w-full text-white font-bold py-4 rounded-xl shadow-lg transition-all 
+                  className={`w-full text-white font-bold font-roboto py-4 rounded-xl shadow-lg transition-all 
                     ${sending 
                       ? "bg-gray-400 cursor-not-allowed" 
                       : "bg-green-700 hover:bg-green-600 active:scale-[0.98]"}`}
@@ -150,7 +147,7 @@ const Contact = () => {
               </div>
             </form>
 
-            {/* Status Message */}
+           
             {showModal.show && (
               <div
                 className={`mt-6 text-center p-4 rounded-xl font-medium text-white transition-all animate-bounce ${

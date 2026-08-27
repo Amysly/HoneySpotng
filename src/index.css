@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
+  --font-sans: "DM Sans", sans-serif; 
+}
 
 .bg-honeycomb{
     background-image: url('/images/honeybg.jpg');

@@ -11,7 +11,7 @@ const Faq = ({faqs}) => {
   return (
     <section className="bg-amber-50 py-16 px-4">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-black text-green-800 mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-black font-roboto text-green-800 mb-10 text-center">
           Got Questions? <span className="text-amber-600">We Have Answers</span>
         </h2>
 
@@ -31,7 +31,7 @@ const Faq = ({faqs}) => {
                   onClick={() => handleToggle(index)}
                   aria-expanded={isActive}
                 >
-                  <h3 className={`text-lg md:text-xl font-bold transition-colors ${
+                  <h3 className={`text-lg md:text-xl font-bold font-roboto transition-colors ${
                     isActive ? 'text-green-700' : 'text-gray-800'
                   }`}>
                     {faqData.question}
@@ -47,7 +47,7 @@ const Faq = ({faqs}) => {
                   }`}
                 >
                   <div className="p-5 md:p-6 pt-0 border-t border-amber-50">
-                    <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+                    <p className="text-gray-600 font-sans font-medium leading-relaxed text-base md:text-lg">
                       {faqData.answer} 
                     </p>
                   </div>

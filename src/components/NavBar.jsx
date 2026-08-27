@@ -31,7 +31,7 @@ const NavBar = () => {
 
 
   const linkStyles = ({ isActive }) => 
-    `font-bold transition-colors duration-300 ${
+    `font-bold font-roboto transition-colors duration-300 ${
       isActive 
         ? 'text-yellow-600 border-b-2 border-yellow-600' 
         : scrolled ? 'text-gray-700 hover:text-yellow-600' : 'text-gray-800 hover:text-yellow-600'
@@ -48,7 +48,7 @@ const NavBar = () => {
   className="flex items-center gap-1 outline-none"
 >
   <img
-    src="images/honeyspotlogo.jpeg"
+    src="images/honeyspotlogo.png"
     alt="HoneySpot Logo"
     className="w-9 h-9 rounded-full object-cover shadow-sm"
   />
@@ -58,11 +58,11 @@ const NavBar = () => {
       scrolled ? "text-green-800" : "text-green-700"
     }`}
   >
-    Honey<span className="text-yellow-600">Spot</span>
+    Honey<span className="text-yellow-600 font-roboto ">Spot</span>
   </span>
 </NavLink>
 
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden md:flex items-center space-x-10 font-roboto ">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
@@ -106,7 +106,7 @@ const NavBar = () => {
               to={link.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) => 
-                `text-2xl font-black transition-colors ${
+                `text-2xl font-black font-roboto  transition-colors ${
                   isActive ? 'text-yellow-600' : 'text-gray-800'
                 }`
               }
@@ -116,7 +116,7 @@ const NavBar = () => {
           ))}
           
           <button className="bg-green-700 text-white px-8 py-2 rounded-full
-           font-bold text-lg shadow-xl hover:bg-green-600">
+           font-bold font-roboto  text-lg shadow-xl hover:bg-green-600">
             Order Now
           </button>
         </div>

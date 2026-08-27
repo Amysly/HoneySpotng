@@ -8,7 +8,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const Testimonials = () => {
-  // Keeping data inside or pass as props to manage exports easily
   const testimonials = [
     {
       name: 'Mary A.',
@@ -30,7 +29,7 @@ const Testimonials = () => {
   return (
     <section className="min-h-screen flex items-center bg-yellow-500 justify-center px-6 py-16">
       <div className="w-full max-w-5xl">
-        <h2 className="text-4xl md:text-4xl font-black text-center text-green-800 mb-12">
+        <h2 className="text-4xl md:text-4xl font-black font-roboto text-center text-green-800 mb-12">
           Customer's Review
         </h2>
 
@@ -46,7 +45,7 @@ const Testimonials = () => {
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           navigation={true}
-          className="pb-16" // Space for pagination dots
+          className="pb-16" 
         >
           {testimonials.map((t, index) => (
             <SwiperSlide key={index} className="h-auto">
@@ -59,22 +58,20 @@ const Testimonials = () => {
                       alt={t.name}
                       className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-yellow-500"
                     />
-                    {/* Decorative quote mark */}
                     <div className="absolute -bottom-2 -right-2 bg-green-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-serif">
                       "
                     </div>
                   </div>
                 )}
                 
-                <p className="text-gray-700 text-lg md:text-xl italic leading-relaxed mb-6">
+                <p className="text-gray-700 text-lg md:text-xl italic leading-relaxed font-medium mb-6">
                   “{t.text}”
                 </p>
                 
-                <h4 className="text-green-800 font-bold text-lg tracking-wide uppercase">
+                <h4 className="text-green-800 font-bold  font-roboto text-lg tracking-wide uppercase">
                   {t.name}
                 </h4>
                 
-                {/* 5-Star Rating placeholder */}
                 <div className="flex text-yellow-400 mt-2">
                   {"★".repeat(5)}
                 </div>
