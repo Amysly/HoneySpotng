@@ -24,7 +24,7 @@ const ScrollUpButton = () => {
   return (
     <button 
       onClick={scrollToTop} 
-      className={`scroll-up-button bg-green-700 hover:bg-green-500 ${isVisible ? "show" : ""}`}
+      className={`scroll-up-button bg-emerald-800 hover:bg-green-700 ${isVisible ? "show" : ""}`}
     >
       <FaArrowUp/>
     </button>

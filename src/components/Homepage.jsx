@@ -6,6 +6,7 @@ import Faq from '../pages/Faq';
 import Contact from '../pages/Contact'
 import Testimonials from '../pages/Testimonials';
 import Wallpaper from '../pages/Wallpaper'
+import HoneyUses from '../pages/HoneyUses';
 
 import faqs from '../FaqData'; 
 
@@ -20,6 +21,9 @@ const Homepage = () => {
        {/* Products Section */}
       <section id="products" className="scroll-mt-20">
         <Product />
+      </section>
+      <section>
+        <HoneyUses/>
       </section>
 
       {/* About Section */}
