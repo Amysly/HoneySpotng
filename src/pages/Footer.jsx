@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 group">
               <FaEnvelope className="text-yellow-500 group-hover:scale-110 transition-transform" />
               <a href="mailto:honeyspot@gmail.com" className="text-sm hover:text-white transition-colors">
-                Honeyspot@gmail.com
+                yinrahoney@gmail.com
               </a>
             </div>
             <div className="flex items-center space-x-3 group">
@@ -73,7 +73,7 @@ const Footer = () => {
 
       <div className="mt-16 border-t border-neutral-800 pt-8 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} HoneySpot. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Yinrahoney. All rights reserved.</p>
           <div className="flex space-x-6">
             <h6 className="hover:text-yellow-500">Privacy Policy</h6>
             <h6  className="hover:text-yellow-500">Terms of Service</h6>
